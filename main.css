@@ -88,9 +88,8 @@ a:hover {
     grid-row: second-row / fifth-row;
     justify-self: center;
     align-self: center;
-    width: 121px;
+    width: 154px;
     height: 56px;
-    padding-right: 40px;
     font-size: 24px;
 }
 
@@ -101,5 +100,15 @@ a:hover {
     align-self: start;
     width: 139px;
     height: 29px;
+    font-size: 24px;
+}
+
+.gallery__item--read_more {
+    grid-column: eleventh-col / last-col;
+    grid-row: fifth-row / sixth-row;
+    justify-self: start;
+    align-self: end;
+    width: 146px;
+    height: 56px;
     font-size: 24px;
 }
