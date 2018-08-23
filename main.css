@@ -1,9 +1,45 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
     width: 1200px;
     height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    color: plum;
+.gallery {
+    display: grid;
+}
+
+.gallery__item--title {
+    font-size: 24px;
+    transform: rotate(-90deg);
+    transform-origin: 20% 50%;
+}
+
+.gallery__item--cat_1 {
+    max-width: 330px;
+    max-height: 350px;
+}
+
+.gallery__item--cat_2 {
+    width: 130px;
+    height: 140px;
+}
+
+.gallery__item--cat_3 {
+    width: 198px;
+    height: 200px;
+}
+
+.gallery__item--cat_4 {
+    width: 125px;
+    height: 188px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
