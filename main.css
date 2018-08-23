@@ -9,17 +9,19 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: [first-col] 100px [second-col] 100px [third-col] 100px [fourth-col] 100px [fifth-col] 100px [sixth-col] 100px [seventh-col] 100px [eighth-col] 100px [ninth-col] 100px [tenth-col] 100px [eleventh-col] 100px [last-col] 100px;
-    grid-template-rows: [first-row] 100px [second-row] 100px [third-row] 100px [fourth-row] 100px [fifth-row] 100px [last-row] 100px; 
+    grid-template-rows: [first-row] 100px [second-row] 100px [third-row] 100px [fourth-row] 100px [fifth-row] 100px [sixth-row] 100px [last-row]; 
     justify-items: start;
 }
 
 .gallery__item--title {
     grid-column: first-col/ third-col;
-    justify-self: baseline;
+    grid-row: first-row/ fourth-row;
+    justify-self: center;
+    align-self: center;
     transform: rotate(-90deg);
-    transform-origin: 70% 100%;
+    transform-origin: 57% 100%;
     width: 242px;
-    height: 79px;
+    height: 28px;
     font-size: 20px;
 }
 
@@ -46,6 +48,10 @@ body {
 }
 
 .gallery__item--cat_4 {
+    grid-column: eleventh-col / span 2;
+    grid-row: first-row / fourth-row;
+    justify-self: center;
+    align-self: center;
     width: 125px;
     height: 188px;
 }
@@ -58,4 +64,11 @@ a {
 a:hover {
     text-decoration: underline;
     color: black;
+}
+
+.gallery__item--follow {
+    grid-column: first-col / fifth-col;
+    grid-row: sixth-row/ last-row;
+    justify-self: center;
+    align-self: center;
 }
