@@ -8,8 +8,9 @@ body {
 
 .gallery {
     display: grid;
-    grid-template-columns: [first-col] 100px [second-col] 100px [third-col] 100px [fourth-col] 100px [fifth-col] 100px [sixth-col] 100px [seventh-col] 100px [eighth-col] 100px [ninth-col] 100px [tenth-col] 100px [eleventh-col] 100px [last-col] 100px;
-    grid-template-rows: [first-row] 100px [second-row] 100px [third-row] 100px [fourth-row] 100px [fifth-row] 100px [sixth-row] 100px [last-row]; 
+    grid-template-columns: [first-col] 90px [second-col] 90px [third-col] 90px [fourth-col] 90px [fifth-col] 90px [sixth-col] 90px [seventh-col] 90px [eighth-col] 90px [ninth-col] 90px [tenth-col] 90px [eleventh-col] 90px [last-col] 90px;
+    grid-template-rows: [first-row] 90px [second-row] 90px [third-row] 90px [fourth-row] 90px [fifth-row] 90px [sixth-row] 90px [last-row]; 
+    grid-gap: 10px;
     justify-items: start;
 }
 
@@ -27,25 +28,29 @@ body {
 }
 
 .gallery__item--cat_1 {
-    grid-column: third-col / seventh-col;
+    grid-column: third-col / sixth-col;
     grid-row: first-row/ fifth-row;
     max-width: 330px;
     max-height: 350px;
 }
 
 .gallery__item--cat_2 {
-    grid-column: eighth-col/ span 2;
+    grid-column: eighth-col/ tenth-col;
     grid-row: first-row/ span 1.5;
     justify-self: center;
-    width: 130px;
+    align-self: unset;
+    width: 128px;
     height: 140px;
 }
 
 .gallery__item--cat_3 {
-    grid-column: seventh-col/ span 3;
-    grid-row: fifth-row/ span 2;
-    width: 198px;
+    grid-column: seventh-col/ tenth-col;
+    grid-row: fifth-row/ last-row;
+    justify-self: center;
+    align-self: unset;
+    width: 195px;
     height: 200px;
+    padding-left: 40px;
 }
 
 .gallery__item--cat_4 {
@@ -72,4 +77,18 @@ a:hover {
     grid-row: sixth-row/ last-row;
     justify-self: center;
     align-self: center;
+    width: 272px;
+    height: 22px;
+    font-size: 18px;
+}
+
+.gallery__item--daily_cats {
+    grid-column: seventh-col / tenth-col;
+    grid-row: second-row / fifth-row;
+    justify-self: center;
+    align-self: center;
+    width: 121px;
+    height: 56px;
+    padding-right: 40px;
+    font-size: 24px;
 }
