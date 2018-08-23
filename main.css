@@ -19,15 +19,16 @@ body {
     justify-self: center;
     align-self: center;
     transform: rotate(-90deg);
-    transform-origin: 57% 100%;
+    transform-origin: center;
     width: 242px;
     height: 28px;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: end;
 }
 
 .gallery__item--cat_1 {
-    grid-column: third-col / span 3.30;
-    grid-row: first-row/ span 3.5;
+    grid-column: third-col / seventh-col;
+    grid-row: first-row/ fifth-row;
     max-width: 330px;
     max-height: 350px;
 }
