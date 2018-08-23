@@ -4,11 +4,12 @@ body {
     width: 1200px;
     height: 600px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F5F1;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: [first-col] 90px [second-col] 90px [third-col] 90px [fourth-col] 90px [fifth-col] 90px [sixth-col] 90px [seventh-col] 90px [eighth-col] 90px [ninth-col] 90px [tenth-col] 90px [eleventh-col] 90px [last-col] 90px;
+    grid-template-columns: [first-col] 90px [second-col] 90px [third-col] 90px [fourth-col] 90px [fifth-col] 90px [sixth-col] 90px [seventh-col] 90px [eighth-col] 90px [ninth-col] 90px [tenth-col] 90px [eleventh-col] 90px [twelfth-col] 90px [last-col];
     grid-template-rows: [first-row] 90px [second-row] 90px [third-row] 90px [fourth-row] 90px [fifth-row] 90px [sixth-row] 90px [last-row]; 
     grid-gap: 10px;
     justify-items: start;
@@ -54,9 +55,9 @@ body {
 }
 
 .gallery__item--cat_4 {
-    grid-column: eleventh-col / span 2;
+    grid-column: eleventh-col / last-col;
     grid-row: first-row / fourth-row;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     width: 125px;
     height: 188px;
@@ -90,5 +91,15 @@ a:hover {
     width: 121px;
     height: 56px;
     padding-right: 40px;
+    font-size: 24px;
+}
+
+.gallery__item--subscribe {
+    grid-column: eleventh-col / last-col;
+    grid-row: first-row / second-row;
+    justify-self: center;
+    align-self: start;
+    width: 139px;
+    height: 29px;
     font-size: 24px;
 }
